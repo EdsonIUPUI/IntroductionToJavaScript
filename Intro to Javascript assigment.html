@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to JavaScript Assigment</title>
+</head>
+<body>
+  <label for="MainInput">What language was created to add interactivity to the Web?:</label>
+  <input type="text" name="MainInput" id="MainInput">
+
+<script>
+  //Reference
+  let txtInput = document.querySelector('#MainInput');
+  //EventListener
+  txtInput.addEventListener('focusout',
+            (event) => {alert("You said " + txtInput.value + " Which is correct. JavaScript was created to implement interactivity towards web pages across the network.");});
+  //Create a prompt of library choosing
+  let LibraryChoice = prompt("What library of your choice would you prefer to use for this website: Vue, React, or jQuery?");
+  //Alert to tell user of their choice of library
+  alert("You Choose " + LibraryChoice + " As your library of choice");
+</script>
+
+<h4>Created by Edson Garcia</h4>
+</body>
+</html>
